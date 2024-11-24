@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  height: 100%;
+  font-family: "DynaPuff", system-ui;
+  background-color: rgb(6, 29, 37);
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+img {
+  width: 200px;
+  height: 50px;
+}
+header {
+  padding: 25px;
+  height: 100px;
+  background: rgb(87, 107, 114);
+}
+main {
+  padding: 48px 48px 48px 56px;
+  font-size: 24px;
+  text-align: center;
+}
+.images {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 56px;
+}
+.images img {
+  width: 320px;
+  height: 240px;
+  border-radius: 48px;
+  transition: 0.25s;
+}
+.images img.hovered {
+  filter: drop-shadow(0px 0px 24px #ffffff);
+}
+.images img:hover {
+  filter: drop-shadow(0px 0px 24px #ffffff);
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  height: 100px;
+  background: rgb(87, 107, 114);
+}
+#background-overlay {
+  top: 0;
+  left: 0;
+  z-index: 3;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.nav-overlay {
+  padding: 64px 88px 64px 88px;
+}
+.nav-overlay img {
+  width: 1200px;
+  height: 640px;
+  border-radius: 32px;
+}
+.nav-overlay img:hover {
+  filter: none;
+}
+.btn-position {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  gap: 56px;
+}
+button {
+  background-color: transparent;
+  border: 2px solid rgb(136, 90, 90);
+  border-radius: 24px;
+  font-size: 24px;
+  font-style: bold;
+  padding: 8px 24px 8px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  background: rgb(136, 90, 90);
+  border: 2px solid white;
+}
+.d-none {
+  display: none;
+}
