@@ -74,7 +74,6 @@ function closeOverlay() {
  * @param {number} index - The index of the image to display.
  */
 function openImage(index) {
-  /** @type {HTMLImageElement | null} */
   let imageDisplay = document.getElementById('imageDisplay');
   imageDisplay.src = arrayImgs[index];
 }
